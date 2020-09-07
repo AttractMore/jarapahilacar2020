@@ -6,11 +6,90 @@ Template: flatsome
 Version: 3.0
 */
 
-/*************** ADD CUSTOM CSS HERE.   ***************/
-
-
-@media only screen and (max-width: 48em) {
-/*************** ADD MOBILE ONLY CSS HERE  ***************/
-
-
+.elements {
+  display: -webkit-flex;
+  display:flex;
+  max-width: 1110px;
+  margin: 0 auto 2.5em;
+}
+.element {
+  -webkit-flex: 1 1 50%;
+  flex: 1 1 50%;
+  padding: 0 1em;
+  display: -webkit-flex;
+  display:flex;
+}
+.element aside {
+  background-image: url('/wp-content/themes/flatsome-child/images/jarapas-150x210.jpg');
+  background-repeat: no-repeat;
+  -webkit-flex: 1 0 150px;
+  flex: 1 0 150px;
+  margin-right: 1em;
+  height: 210px;
+  background-position: center;
+}
+.element:last-child aside {
+  background-image: url('/wp-content/themes/flatsome-child/images/cortina-alpujarreña-150x210.jpg');
+}
+.element div {
+  display: -webkit-flex;
+  display:flex;
+  -webkit-flex-direction:column;
+  flex-direction:column;
+  -webkit-justify-content:space-around;
+  justify-content: space-around;
+}
+.element div p {
+  margin-bottom: 0;
+}
+.element div .button {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 850px) {
+  .elements {
+    -webkit-flex-wrap: wrap;
+    flex-wrap:wrap;
+    margin-bottom: 1em;
+  }
+  .element {
+    -webkit-flex: 0 1 100%;
+    flex: 0 1 100%;
+    margin-bottom: 1.5em;
+  }
+  .element:last-child {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .element aside {
+    -webkit-flex: 0 0 150px;
+    flex: 0 0 150px;
+    height:180px;
+  }
+  .element:last-child aside {
+    margin-left: 1em;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .elements {
+    display:block;
+  }
+  .element {
+    display:block;
+  }
+  .element aside {
+    background-image: url('/wp-content/themes/flatsome-child/images/jarapas-468x150.jpg');
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0.5em;
+    width:100%;
+    height: 150px;
+  }
+  .element:last-child aside {
+    margin-left: 0;
+    background-image: url('/wp-content/themes/flatsome-child/images/cortina-alpujarreña-468x150.jpg');
+  }
+  .element div p:first-child {
+    margin-bottom: 1em;
+  }
 }
