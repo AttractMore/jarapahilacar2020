@@ -5,7 +5,42 @@ Author: UX Themes
 Template: flatsome
 Version: 3.0
 */
+.hero {
+  position: relative;
+}
+.hero img {
+  width:100%;
+  object-fit: cover;
+}
+.hero h3 {
+  position: absolute;
+  color: #fff;
+  font-size: 2em;
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+  width: auto;
+}
+.hero .jarapas-artesanas {
+  top:14%;
+  left:15%;
+}
+.hero .cortinas-alpujarrenas {
+  bottom:14%;
+  left: 60%;
+}
+@media screen and (max-width: 850px) {
+  .hero h3 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 550px) {
+  .hero h3 {
+    font-size: 1.2em;
+  }
+}
 
+/****************************************/
 .elements {
   display: -webkit-flex;
   display:flex;
