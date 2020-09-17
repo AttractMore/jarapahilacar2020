@@ -141,3 +141,10 @@ Version: 3.0
     margin-bottom: 1em;
   }
 }
+/**********************
+  Phone numbers
+**********************/
+a[href^="tel:"]:before {
+  content: "\260e";
+  margin-right: 0.5em;
+}
