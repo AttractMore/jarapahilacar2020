@@ -141,6 +141,9 @@ Version: 3.0
     margin-bottom: 1em;
   }
 }
+section.testimonials {
+  padding-bottom: 6px !important;
+}
 /**********************
   Phone numbers
 **********************/
