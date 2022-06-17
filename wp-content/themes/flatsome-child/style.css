@@ -151,3 +151,11 @@ a[href^="tel:"]:before {
   content: "\260e";
   margin-right: 0.5em;
 }
+
+.boxzilla-close-icon {
+  right: 4px !important;
+  top: 4px !important;
+  opacity: 1 !important;
+  border: 1px solid #000;
+  border-radius: 9999px;
+}
