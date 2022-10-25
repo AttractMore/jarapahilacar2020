@@ -9,7 +9,7 @@ function am_get_subcategory_terms( $terms, $taxonomies, $args ) {
   // if it is a product category and on the shop page
   if ( in_array( 'product_cat', $taxonomies ) && ! is_admin() && is_shop() ) {
     foreach( $terms as $key => $term ) {
-      if ( !in_array( $term->slug, array( 'jarapas-alpujarrenas', 'festival-de-ecoturismo' ) ) ) { //pass the slug names here
+      if ( !in_array( $term->slug, array( 'jarapa-granada', 'festival-de-ecoturismo' ) ) ) { //pass the slug names here
         $new_terms[] = $term;
       }
     }
